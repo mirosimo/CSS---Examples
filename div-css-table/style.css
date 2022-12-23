@@ -1,0 +1,93 @@
+body {
+	background: #E8E8E8;
+}
+
+.title_part {
+	display: inline-block;
+	width: 100%;
+	text-align: center;	
+        font-size: 16px;
+        text-decoration: underline;
+        color: #ff6600;
+}
+
+.table_part {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+
+.m_table {		
+	display: inline-block;
+	border: 2px solid #989898;
+}
+
+/* Head of the table */
+.table_head {
+    background: #085;
+    font-size: 0px;     /* Hack becouse of inline block - remove unespected space betveen child spans - the font-size is setup in child span, here must be zero*/   
+    border-bottom: 2px solid #989898;
+}
+
+.table_head span {
+    display: inline-block;    
+    border-right: 1px solid #989898;
+    font-size: 20px;    
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+
+.table_head span:last-child {
+    border-right: 0px;
+}
+
+/* Body of the table */
+
+/* Background Color of odd row */
+.table_body div:nth-child(odd) {    
+    background: #0066cc;
+}
+
+/* Background Color of even row */
+.table_body div:nth-child(even) {    
+    background: #009933;
+}
+
+.table_body div {
+    font-size: 0px;  /* unwanted space between inline blocks hack */
+}
+
+.table_body div span {
+    display: inline-block;
+    font-size: 14px;
+    text-align: left;
+    border-right: 1px solid #989898;    
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+
+.table_body div span:last-child {
+    border-right: 0px;
+}
+
+
+/*left right padding must be same for head and body part of table*/
+.table_head span, .table_body div span {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+
+/* Setup of column width - normally probably would be 
+  done dynamicly in html */
+.table_head span:nth-child(1), .table_body div span:nth-child(1) {
+    width: 80px;
+}
+.table_head span:nth-child(2), .table_body div span:nth-child(2) {
+    width: 80px;
+}
+.table_head span:nth-child(3), .table_body div span:nth-child(3) {
+    width: 100px;
+}
+
+

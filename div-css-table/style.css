@@ -17,77 +17,90 @@ body {
 	text-align: center;
 }
 
-.m_table {		
-	display: inline-block;
-	border: 2px solid #989898;
+.buttons_part {
+    display: inline-block;
+    width: 100%;
+    text-align: center;	
+    margin-top: 40px;
+}
+
+.table_part table {	
+        display: inline-block;
+	border: 2px solid #989898;   
+        border-collapse: collapse;
 }
 
 /* Head of the table */
-.table_head {
+tr.row_head {
     background: #085;
-    font-size: 0px;     /* Hack becouse of inline block - remove unespected space betveen child spans - the font-size is setup in child span, here must be zero*/   
     border-bottom: 2px solid #989898;
 }
 
-.table_head span {
-    display: inline-block;    
+.row_head th {
     border-right: 1px solid #989898;
     font-size: 20px;    
-    padding-bottom: 4px;
-    padding-top: 4px;
+    padding: 4px 8px;
+    
 }
 
-.table_head span:last-child {
+.row_head th:last-child {
     border-right: 0px;
 }
 
 /* Body of the table */
 
 /* Background Color of odd row */
-.table_body div:nth-child(odd) {    
+.row_body:nth-child(odd) {    
     background: #0066cc;
 }
 
 /* Background Color of even row */
-.table_body div:nth-child(even) {    
+.row_body:nth-child(even) {    
     background: #009933;
 }
 
-.table_body div {
-    font-size: 0px;  /* unwanted space between inline blocks hack */
+.row_body {
+    border-bottom: 1px solid #989898;
 }
 
-.table_body div span {
-    display: inline-block;
+.row_body:last-child {
+    border-bottom: 0px;
+}
+
+.row_body td {
     font-size: 14px;
     text-align: left;
     border-right: 1px solid #989898;    
-    padding-bottom: 2px;
-    padding-top: 2px;
+    padding: 2px 6px;
+    
 }
 
-.table_body div span:last-child {
+.row_body td:last-child {
     border-right: 0px;
 }
 
 
-/*left right padding must be same for head and body part of table*/
-.table_head span, .table_body div span {
-    padding-left: 4px;
-    padding-right: 4px;
+/***********************/
+/*  Href button style  */
+/***********************/
+.buttons_part a:link, .buttons_part a:visited {
+  /*background-color: #009933;*/
+  background-color: #99ff99;
+  font-size: 18px;  
+  font-weight: normal;
+  color: #ff4d4d; /*#ff6600;*/
+  border: 1px solid #66ff66;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  opacity: 80%;
+  display: inline-block;
 }
 
-
-/* Setup of column width - normally probably would be 
-  done dynamicly in html */
-.table_head span:nth-child(1), .table_body div span:nth-child(1) {
-    width: 80px;
+.buttons_part a:hover, .buttons_part a:active {
+  background-color: #66ff66;
+  color: #ff8080; /*#ff6600;*/
+  font-weight: normal;
 }
-.table_head span:nth-child(2), .table_body div span:nth-child(2) {
-    width: 80px;
-}
-.table_head span:nth-child(3), .table_body div span:nth-child(3) {
-    width: 100px;
-}
-
 

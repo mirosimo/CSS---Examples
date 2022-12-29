@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <title>DIV CSS Table</title>
-        <link rel="stylesheet" href="css/style2.css?<?php echo time(); ?>" />            
+        <link rel="stylesheet" href="style.css?<?php echo time(); ?>" />            
     </head>
     <body>        
             <div class="title_part">		

@@ -33,12 +33,8 @@ img {
     max-height: 250px;
 }
 
-/* logo height*/
-.top-part .main-logo-img {
-    max-height: 150px;    
-}
-
 /* this guy makes the first element (logo) horizontal centered */
 .top-part img:nth-child(1) {
     margin: auto;
+    max-height: 150px; 
 }

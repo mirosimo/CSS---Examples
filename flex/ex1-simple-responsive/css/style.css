@@ -22,7 +22,7 @@ img {
     margin-top: 30px;    
 }
 
-/* Al child elememts in first level of top-part element */
+/* All child elememts in first level of top-part element */
 .top-part > * {     
     flex-grow: 0;
     flex-shrink: 1;     

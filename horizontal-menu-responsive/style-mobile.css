@@ -1,0 +1,229 @@
+
+@media (max-width: 780px) 
+{    
+    .open-mobile-menu-btn-wrapper {
+        padding-top: 4px;
+        padding-bottom: 2px;
+    }    
+    .open-mobile-menu-btn-wrapper > span {
+        line-height: 34px;
+        color: #b32d00;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .open-mobile-menu-btn {
+            float: left;
+            height: 34px;
+            width: 40px;  
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+    }
+
+    .open-mobile-menu-btn span {
+        display: block;
+        height: 3px;
+        width: 24px;
+        background-color: #b32d00;
+        position: relative;
+    }
+
+    .open-mobile-menu-btn span:before,
+    .open-mobile-menu-btn span:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #b32d00;
+        box-sizing: border-box;
+    }
+
+    .open-mobile-menu-btn span:before {
+        top:-7px;
+    }
+
+    .open-mobile-menu-btn span:after {
+        top:7px;
+    }
+
+
+    .close-mobile-menu-btn {
+        display: flex;
+        height: 30px;
+        width: 60px;
+        background-color: #D0D0D0;      
+        margin-top: 5px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        cursor: pointer;    
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;    
+    }
+
+    .close-mobile-menu-btn img {
+        width: 18px;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        z-index: 999;
+        background-color: rgba(0,0,0,0.5);
+        left:0;
+        top:0;
+        height: 100%;
+        width: 100%;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .menu-overlay.active {
+        visibility: visible; 
+        opacity: 1;
+    }
+
+
+/* Here the fun begins - the mobile menu */
+    .m-navbar {        
+        position: fixed;        
+        top:0;
+        right: -280px;
+        visibility: hidden;
+        width: 280px;
+        height: 100%;
+        overflow-y:auto;
+        background-color: rgba(88, 88, 88, 0.8);
+        z-index: 1000;
+        padding: 15px 0;
+        text-align: center;
+        transition: all 0.5s ease;
+        border-left: 5px solid #004080;        
+        border-top: 7px solid #004080;                
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;    
+    }                
+    
+    .m-navbar.open {
+        visibility: visible;
+        right: 0px;
+    }
+    
+    .m-navbar ul {      
+        padding: 0;    
+        margin: 0;
+        text-transform: uppercase;   
+        font-size: 16px;
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    .m-navbar>ul {      
+        margin-left: 12px;
+    }
+    
+    .m-navbar > ul li {                
+        width: 240px;
+    }
+       
+    
+    .m-navbar > ul > li:first-child {        
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+    
+    .m-navbar > ul > li:last-child {        
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+    
+    .m-navbar > ul > li:first-child a img {        
+        display: inline-block;
+    }
+    
+    .m-navbar > ul > li.active {        
+        /*border-top: 6px solid #585858;        */
+    }
+    
+    .m-navbar > ul > li.active > a {  
+        font-weight: bold;
+    }
+            
+    .m-navbar >ul >li > a {
+        background: linear-gradient(#b30000, #660000); 
+        color: #fff;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 240px;
+        display: block;    
+        white-space: nowrap;            
+        text-decoration: none;
+    }
+    
+    .m-navbar ul li a:hover {
+        background: #ff6600;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        border: 5px;
+    }
+    
+    
+    /* Setup for second level of mobile menu*/
+    
+    /* Second level is hidedden
+      - Open by JAVASCRIPT */
+    .m-navbar > ul > li > ul {    
+        width: 240px;
+        position: relative;        
+        max-height: 0;
+        opacity: 1;
+        visibility: visible;
+        overflow: hidden;        
+    }    
+    
+    .m-navbar > ul > li > ul > li {        
+        width: 240px;
+        margin: 0px;        
+    }
+    
+    .m-navbar > ul > li > ul > li:last-child {                      
+        /*border-bottom: 4px solid black;*/
+    }
+    
+    .m-navbar > ul > li > ul > li a {        
+        color: #fff;
+        background: linear-gradient(#004080, #0066cc);        
+        display: inline-block;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-decoration: none;
+        width: 240px;
+    }
+ 
+    /* Third level */
+    .m-navbar > ul > li > ul > li > ul{    
+        float: right;
+        width: 240px;
+        position: relative;        
+        max-height: 0;
+        opacity: 1;
+        visibility: visible;
+        overflow: hidden;        
+    }
+    
+    .m-navbar > ul > li > ul > li > ul > li{        
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: visible;
+    }    
+    .m-navbar > ul > li > ul > li > ul > li a{        
+        width: 200px;
+        background: linear-gradient(#006600, #004d00);      
+    }
+}

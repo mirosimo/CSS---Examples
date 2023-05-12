@@ -14,10 +14,10 @@ Comes soon...
 ### Mobile Menu
 ![CSS Horizontal Menu - Screenshot](/horizontal-menu-responsive/screenshots/responsive-mobile-close.png)
 
-### Mobile Menu Expanded
+### Mobile Menu Open
 ![CSS Horizontal Menu - Screenshot](/horizontal-menu-responsive/screenshots/responsive-mobile-open.png)
 
-### Mobile Menu Expanded2
+### Mobile Menu Expanded
 ![CSS Horizontal Menu - Screenshot](/horizontal-menu-responsive/screenshots/responsive-mobile-open2.png)
 
 

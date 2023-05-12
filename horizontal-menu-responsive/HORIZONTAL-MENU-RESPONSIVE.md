@@ -8,5 +8,17 @@ Comes soon...
 
 ## Screenshots
 
+### Horizontal Menu
+![CSS Horizontal Menu - Screenshot](/horizontal-menu-responsive/screenshots/responsive-base.png)
+
+### Mobile Menu
+![CSS Horizontal Menu - Screenshot](/horizontal-menu-responsive/screenshots/responsive-mobile-close.png)
+
+### Mobile Menu Expanded
+![CSS Horizontal Menu - Screenshot](/horizontal-menu-responsive/screenshots/responsive-mobile-open.png)
+
+### Mobile Menu Expanded2
+![CSS Horizontal Menu - Screenshot](/horizontal-menu-responsive/screenshots/responsive-mobile-open2.png)
+
 
 

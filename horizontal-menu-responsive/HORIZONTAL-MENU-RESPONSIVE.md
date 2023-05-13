@@ -9,17 +9,16 @@ Comes soon...
 ## Screenshots
 
 ### Horizontal Menu
-![CSS Horizontal Menu - Screenshot](/horizontal-menu-responsive/screenshots/responsive-base.png)
+<img src="/horizontal-menu-responsive/screenshots/responsive-base.png" width="500">
 
 ### Mobile Menu
-![CSS Horizontal Menu - Screenshot](/horizontal-menu-responsive/screenshots/responsive-mobile-close.png | width=250)
 <img src="/horizontal-menu-responsive/screenshots/responsive-mobile-close.png" width="250">
 
 ### Mobile Menu Open
-![CSS Horizontal Menu - Screenshot](/horizontal-menu-responsive/screenshots/responsive-mobile-open.png | width=250)
+<img src="/horizontal-menu-responsive/screenshots/responsive-mobile-open.png" width="250">
 
 ### Mobile Menu Expanded
-![CSS Horizontal Menu - Screenshot](/horizontal-menu-responsive/screenshots/responsive-mobile-open2.png | width=250)
+<img src="/horizontal-menu-responsive/screenshots/responsive-mobile-open2.png" width="250">
 
 
 

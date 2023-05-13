@@ -9,7 +9,7 @@ Comes soon...
 ## Screenshots
 
 ### Horizontal Menu
-<img src="/horizontal-menu-responsive/screenshots/responsive-base.png" width="500">
+<img src="/horizontal-menu-responsive/screenshots/responsive-base.png" width="700">
 
 ### Mobile Menu
 <img src="/horizontal-menu-responsive/screenshots/responsive-mobile-close.png" width="250">

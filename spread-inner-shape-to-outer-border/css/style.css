@@ -4,33 +4,31 @@ body {
     box-sizing: border-box;
 }
 
-.card {    
+.m-rectangle {    
     display: flex;
     position: relative;
     margin: 20px 40px;
     width: 200px;
     height: 120px;
-    /*background: #ccc;*/
     border-radius: 20px;
     align-items: center;
     transition: 0.5s;
     overflow: hidden;
     border: 2px solid #808080;
+    background: #047d65;
 }
 
-.card .circle {
+.m-rectangle .m-circle {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     background: #ff9900;
     clip-path: circle(40px at center);
-    transition: 0.5s;
+    transition: 0.8s;
 }
 
-.card .circle:hover {
+.m-rectangle:hover .m-circle {
     /*background: #ff9900;*/
     background: #3399ff;
-    clip-path: circle(200px at center);
+    clip-path: circle(200px at center);   
 }

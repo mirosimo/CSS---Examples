@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <title>Card Flip Effect</title>
         <link rel="stylesheet" href="css/style.css?<?php echo time(); ?>" />            

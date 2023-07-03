@@ -1,4 +1,5 @@
-// Posun o jednu sekundu = posun raficky o 6 stupnu.
+// Posun o jednu sekundu (minutu) predstavuje na ciferniku
+// posun sekundove (minutove) raficky o 6 stupnu.
 // 360 / 60 = 6 ...
 const deg = 6;
 const hourHand = document.querySelector('#hour');

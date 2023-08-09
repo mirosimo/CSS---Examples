@@ -1,0 +1,30 @@
+.m-clock-square {
+    --clock-shape: 15%;
+    --clock-border-width: 2px;
+    --clock-border-color: rgb(84, 85, 85);
+    --clock-border-padding: 6px;
+
+    --clock-diameter: 120px;
+    --clock-punkt-diameter: 10px;
+    --clock-background-color: rgb(214, 56, 175);
+
+    /* Rucicky */
+    --clock-hour-hand-color: rgba(120,120,120, 1);
+    --clock-hour-hand-width: 4px;
+    --clock-min-hand-color: rgba(120,120,120, 1);
+    --clock-min-hand-width: 3px;
+    --clock-sec-hand-color: rgba(255, 204, 0, 0.7);
+
+    /* Cifernik */
+    --clock-quatters-signs: rgba(80,80,80, 1);
+    --clock-quatters-signs-length: 20px;
+    --clock-quatters-signs-width:4px;
+    --clock-min-signs: rgba(160,160,160, 1);
+    --clock-min-signs-length: 10px;
+    --clock-min-signs-width:2px;
+
+
+    display: flex;
+    justify-content: center;
+}
+

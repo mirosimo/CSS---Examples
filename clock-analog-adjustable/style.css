@@ -1,0 +1,126 @@
+body {
+    background: #004080;
+}
+
+.clock-border {    
+    padding: var(--clock-border-padding);
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    border: var(--clock-border-width) solid var(--clock-border-color);
+    border-radius: var(--clock-shape);
+    background: var(--clock-background-color);
+}
+
+.dials-wrapper {
+    position: relative;
+    height: var(--clock-diameter);
+    width: var(--clock-diameter);
+}
+
+.center-punkt {
+    position: absolute;
+    left: calc(var(--clock-diameter)/2 - var(--clock-punkt-diameter)/2);
+    top: calc(var(--clock-diameter)/2 - var(--clock-punkt-diameter)/2);
+    width: var(--clock-punkt-diameter);
+    height: var(--clock-punkt-diameter);
+    background: #383838;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.m-line {
+    position: absolute;
+    display: flex;    
+    align-items: center;
+    width: calc(var(--clock-diameter)/2);
+    height: 0px;
+    /*background: red;*/
+    top: 50%;
+    transform-origin: right;
+
+}
+
+.outer-long {
+    width: var(--clock-quatters-signs-length);
+    height: var(--clock-quatters-signs-width);    
+    background: var(--clock-quatters-signs);
+}
+
+.outer-short {
+    width: var(--clock-min-signs-length);
+    height: var(--clock-min-signs-width);    
+    background: var(--clock-min-signs);
+}
+
+/* Quatters */
+.line-12 {    
+    transform: rotate(90deg);
+}
+
+.line-3 {    
+    transform: rotate(180deg);
+}
+
+.line-6 {    
+    transform: rotate(270deg);
+}
+
+/* Between Quatters */
+.line-10 {    
+    transform: rotate(30deg);
+}
+.line-11 {    
+    transform: rotate(60deg);
+}
+.line-1 {    
+    transform: rotate(120deg);
+}
+.line-2 {    
+    transform: rotate(150deg);
+}
+.line-4 {    
+    transform: rotate(210deg);
+}
+.line-5 {    
+    transform: rotate(240deg);
+}
+.line-7 {    
+    transform: rotate(300deg);
+}
+.line-8 {    
+    transform: rotate(330deg);
+}
+
+.hand {
+    position: absolute;
+    right: 50%;    
+    border-radius: 2px;
+    transform-origin: right;
+    transform: rotate(90deg);
+  }
+
+  .hand.hour-hand {
+    top: calc(var(--clock-diameter)/2 - var(--clock-hour-hand-width)/2);
+    background: var(--clock-hour-hand-color);
+    width: 30%;
+    height: var(--clock-hour-hand-width);
+
+    z-index: 3;
+  }
+  
+  .hand.min-hand {
+    top: calc(var(--clock-diameter)/2 - var(--clock-min-hand-width)/2);
+    background:var(--clock-min-hand-color);
+    height: var(--clock-min-hand-width);
+    z-index: 10;
+    width: 40%;
+  }
+  
+  .hand.second-hand {
+    top: calc(50% - 1px);
+    background:var(--clock-sec-hand-color);
+    width: 45%;
+    height: 2px;
+    z-index: 100;
+  }

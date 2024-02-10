@@ -1,0 +1,147 @@
+:root {
+    --title-background: rgba(242, 242, 242, 0.8);
+    --title-font-color: rgba(32,32,32, 1);
+    --title-font-size: 19px;
+    
+    --close-button-width: 35px;
+    --close-button-height: 35px;
+    --close-button-x-size: 32px;
+    --close-button-x-color: rgba(230, 0, 0, 0.5);
+}
+
+body {
+    background: #007f7f;
+}
+
+.img-and-title-wrapper {
+    display: grid;
+    box-shadow: 0 0 5px 7px #800000;
+    background-color: var(--title-background);
+    max-width: 850px;
+    margin: 40px auto;
+}
+
+.img-and-title-wrapper .img-wrapper {
+    position: relative;
+    padding: 10px 15px 10px 15px;
+    background: white;
+    /*border: 12px solid green;*/
+}
+
+.img-and-title-wrapper .img-wrapper:hover .tooltip-container {
+    opacity: 1;
+    visibility: visible;
+    /*transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;*/
+    transition: all 0.5s ease-out;
+}
+
+/* This make an image flexible */
+.img-and-title-wrapper img, .close-icon-wrapper img {
+    object-fit: cover;
+    width: 100%;
+    max-width: 100%;    
+}
+
+/* Descreption of an image */
+.img-and-title-wrapper .title-wrapper {        
+    font-size: var(--title-font-size);
+    color: var(--title-font-color);
+    justify-self: center;
+    border-top: 2px solid rgba(64, 64, 64, 0.5);
+    width: 100%; 
+    text-align: center;
+}
+
+.img-and-title-wrapper .title-wrapper span {    
+    display: inline-block;    
+    padding: 3px 7px;
+}
+
+/* Enlarge icon */
+.enlarge-icon-wrapper {
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    right: 30px;
+    background: rgba(242, 242, 242, 0.7);
+    padding: 4px 7px;
+    border-radius: 5px;
+    border: 1px solid rgba(153, 153, 153, 1);
+    width: 30px;
+}
+
+.enlarge-icon-wrapper:hover {
+    background: rgba(166, 166, 166, 0.5);
+}
+
+/**********************************************/
+/* Modal window for displaying enlarged image */
+/**********************************************/
+.modal-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;    
+}
+
+/* Class show-modal is added by javascript 
+    when present, then make modal window visible
+*/
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    /*transform: scale(1.0);*/
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-inner-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    height: auto;
+    width: auto;
+    max-width: 100vw;
+    text-align: center;
+    overflow: auto;
+    /*border:4px solid green;*/
+}
+
+.modal-inner-wrapper .modal-img-wrapper img {   
+    display: block;
+    object-fit: cover;
+    width: auto;
+    max-width: 100vw;
+}
+
+
+
+/* Close button */
+.close-icon-wrapper {
+    position: absolute;
+    cursor: pointer;
+    top: 30px;
+    right: 40px;    
+    background: rgba(242, 242, 242, 0.7);
+    padding: 8px 8px;
+    border-radius: 5px;
+    border: 1px solid rgba(153, 153, 153, 1);
+    width: 20px;
+    height: 20px;
+}
+
+.close-icon-wrapper:hover {
+    background-color: darkgray;
+}
+
+
+
+
+
+

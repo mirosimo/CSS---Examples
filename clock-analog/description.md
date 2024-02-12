@@ -1,2 +1,0 @@
-# Popis
-Analgové hodiny - Pomocí Css, Javascriptu. V souboru css jsou proměnné pomocí kterých se nechá nastavit barva pozadí, barva border, průměr hodin, velikost, barva rafiček. Číselník je transparentní obrázek. Až se budu někdy nudit, tak asi předělam, aby i číselník generoval javascript - aby bylo možné nastavit barvičky čísel, velikost čísel, atd... V javascriptu se spočítá úhel natočení jednotlivých rafiček, provede se překreslení rafiček a pomocí funkce **setInterval()** - se toto provádí každou sekundu.
